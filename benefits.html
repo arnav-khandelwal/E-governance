@@ -8,8 +8,9 @@ Last name:
   
 Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Male:<input name="r1" type="radio">&nbsp;&nbsp;&nbsp;Female:<input type ="radio" name="r1"><br><br>
   
-Date Of Birth(D.O.B):&nbsp;&nbsp;&nbsp;month<input type="text" name="month" list="month" size="11">
-  &nbsp;&nbsp;date<input type="text" name="date" list="date" size="4">
+Date Of Birth(D.O.B):&nbsp;&nbsp;year<input type="text" name="year" list="year" size="4">
+  &nbsp;&nbsp;month<input type="text" name="month" list="month" size="9">
+  &nbsp;&nbsp;date<input type="text" name="date" list="date" size="2">
   <br><br>
   Address:&nbsp:&nbsp:<input type="text" name="add"><br><br>
   Father' name:<input type=text><br><br>
@@ -62,6 +63,16 @@ Date Of Birth(D.O.B):&nbsp;&nbsp;&nbsp;month<input type="text" name="month" list
     <option value="30">
     <option value="31">                                  
     </datalist>
+   <datalist id="year">
+  <script>
+var text = "";
+var i;
+for (i =1900; i < 2019; i++) {
+  <option value= text += i;>
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+   </datalist>
   </form>
 </body>
 </html>
