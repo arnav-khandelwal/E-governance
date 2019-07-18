@@ -69,6 +69,10 @@
 		{
 		document.getElementById("div_content").innerHTML ="<iframe frameborder='0' width=' 100%'   height='450px' src='schemes.html'></iframe>";
                 }
+		 if(param==0)
+		{
+		document.getElementById("div_content").innerHTML ="<iframe frameborder='0' width=' 100%'   height='450px' src='calendar.html'></iframe>";
+                }
 		if(param==6)
 		{
 		document.getElementById("div_content").innerHTML ="<iframe frameborder='0' width=' 100%'   height='450px' src='apply(driving).html'></iframe>";
@@ -139,6 +143,16 @@
 						</span>
 					</a>
 				</li>
+				<li>
+					<a href="#" onclick="filltext(0)" ondblclick="filltext(0)">
+						<img src="schemes.png" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">calendar</span>
+							</span>
+					</a>
+				</li>
+
 				<li>
 					<a href="#" onclick="filltext(1)" ondblclick="filltext(1)">
 						<img src="images/dps.jpg" alt=""/>
