@@ -69,7 +69,10 @@
 		{
 		document.getElementById("div_content").innerHTML ="<iframe frameborder='0' width=' 100%'   height='450px' src='schemes.html'></iframe>";
                 }
-		
+		if(param==10)
+		{
+		document.getElementById("div_content").innerHTML ="<iframe frameborder='0' width=' 100%'   height='450px' src='calender.html'></iframe>";
+                }
 		}
 		</script>		
     </head>
@@ -144,6 +147,15 @@
 							<span class="sdt_link">Contact Us</span>
 							<span class="sdt_descr"> DPS Indirapuram</span>
 							<span class="sdt_descr"> Our Team</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" onclick="filltext(10)" ondblclick="filltext(10)">
+						<img src="schemes.png" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Calender</span>
 						</span>
 					</a>
 				</li>
